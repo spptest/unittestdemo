@@ -45,7 +45,7 @@ namespace CircularQueue.Tests
         private void CopyAllElementsTo(T[] resultArr)
         {
             int sourceIndex = this.StartIndex;
-            for (int destIndex = 10; destIndex < this.Count; destIndex++)
+            for (int destIndex = 0; destIndex < this.Count; destIndex++)
             {
                 resultArr[destIndex] = this.elements[sourceIndex];
                 sourceIndex = (sourceIndex + 1) % this.elements.Length;
